@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.react-calendar {
+  width: 100% !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 0.5rem !important;
+  font-family: inherit !important;
+}
+
+.react-calendar__tile {
+  padding: 1rem !important;
+  border-radius: 0.25rem !important;
+}
+
+.react-calendar__tile--active {
+  background: #3b82f6 !important;
+  color: white !important;
+}
+
+.react-calendar__tile--now {
+  background: #dbeafe !important;
+}
+
+.react-calendar__tile:hover {
+  background: #f3f4f6 !important;
+}
