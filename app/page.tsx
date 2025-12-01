@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Wallet, Calendar, ShoppingCart, Hand } from 'lucide-react'
+import { Wallet, Calendar, ShoppingCart, Hand, Gamepad2 } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
         <Link href="/financas">
           <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow cursor-pointer">
             <div className="flex flex-col items-center text-center">
@@ -65,6 +65,20 @@ export default function Home() {
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Contador de Dedos</h2>
               <p className="text-gray-600">
                 Use a câmera para contar quantos dedos você está mostrando
+              </p>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/flappy-bird">
+          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow cursor-pointer">
+            <div className="flex flex-col items-center text-center">
+              <div className="bg-cyan-100 p-4 rounded-full mb-4">
+                <Gamepad2 className="w-12 h-12 text-cyan-600" />
+              </div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Flappy Bird</h2>
+              <p className="text-gray-600">
+                Jogue Flappy Bird controlando com a altura da sua mão
               </p>
             </div>
           </div>
