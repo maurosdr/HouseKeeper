@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Wallet, Calendar, ShoppingCart } from 'lucide-react'
+import { Wallet, Calendar, ShoppingCart, Hand } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
         <Link href="/financas">
           <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow cursor-pointer">
             <div className="flex flex-col items-center text-center">
@@ -51,6 +51,20 @@ export default function Home() {
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Compras e Estoque</h2>
               <p className="text-gray-600">
                 Controle o estoque e gere lista de compras em PDF
+              </p>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/contador-dedos">
+          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow cursor-pointer">
+            <div className="flex flex-col items-center text-center">
+              <div className="bg-pink-100 p-4 rounded-full mb-4">
+                <Hand className="w-12 h-12 text-pink-600" />
+              </div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Contador de Dedos</h2>
+              <p className="text-gray-600">
+                Use a câmera para contar quantos dedos você está mostrando
               </p>
             </div>
           </div>
